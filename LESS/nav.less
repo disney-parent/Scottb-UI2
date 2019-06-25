@@ -1,0 +1,93 @@
+.nav-bar {
+    .width-100();
+    display:flex;
+    justify-content:center;
+    height: 5rem;
+    text-decoration: none;
+
+    @media @tablet {
+      height:7rem;
+    }
+    .container {
+      .width-100();
+      display:flex;
+      justify-content:center;
+      align-items: center;
+      color: @disney-gold;
+      letter-spacing: .1rem;
+      padding: 0 1rem;
+      border-bottom: .2rem solid @disney-gold;
+      box-shadow: .1rem .1rem .5rem @disney-gold;
+      
+      @media @tablet {
+        padding: 0 0
+      }
+      @media @mobile {
+          flex-direction:column-reverse;
+          min-height:8rem;
+      }
+      }
+      .container-left {
+       .flex(none, center);
+       flex-direction:space-around;
+       font-family: 'Merienda', cursive;
+        font-size: 1.6rem;
+        
+        @media @tablet {
+          font-size:1.2rem;
+        }
+        @media @mobile{
+            margin-bottom:1rem;
+        }
+
+        @media @smmobile{
+          font-size:1.4rem;
+        }
+        ul{
+            flex-wrap:wrap;
+        }
+        li {
+          cursor: pointer;
+          display:inline-block;
+          text-decoration:none;;
+          padding: 0 2rem;
+
+
+          a {
+              text-decoration: none;
+         
+          }
+          a:visited{
+            color:@disney-blue;
+          }
+
+          a:focus{
+            color:@disney-gold;
+          }
+        &:hover {
+            text-decoration: underline;
+            color: @disney-blue;
+          }
+          
+        }
+      }
+      .container-center {
+        .flex(center, center);
+        flex: 3;
+        font-size: 3rem;
+        color: @disney-gold;
+          cursor: pointer;
+          margin-right: 5%;
+        }
+        .btn {
+            .button-creator(20rem, 4.1rem, @white, @disney-gold, 2.5rem);  
+            font-family: 'WaltographRegular'; 
+            font-weight: lighter; 
+            font-style: normal;  
+            box-shadow: .1rem .1rem .5rem @disney-gold;  
+
+            @media @mobile{
+                display:none;
+            }
+          }
+}

@@ -1,0 +1,208 @@
+.header {
+    min-height:50rem;
+      height:100%;
+      background: url('../img/castle.jpg') center center;
+      background-size:cover;
+    position:relative;
+  
+    @media @mobile {
+      margin-top:3rem;
+      max-height:30rem;
+      height:auto;
+      background-size:unset;
+      background-color:@white;
+      opacity:0.95;
+    }
+    
+    h1 {
+          font-size: 6rem;
+          color:@white;
+      padding: 16.3rem 0 2.5rem 61.4rem;
+  
+      @media @tablet{
+        font-size:4rem;
+        padding: 5.3rem 0 2.5rem 6.4rem
+      }
+  
+      @media @mobile {
+        padding: 2rem 0 1rem;
+        font-size:3rem;
+        color:@disney-blue;
+      //   background-color:@white;
+      // opacity:0.8;
+      }
+    }
+      h3 {
+        font-family: 'Merienda', cursive;
+        font-size: 3rem;
+        color:@white;
+        padding: 18.6rem 0 2.5rem 36.5rem;
+  
+        @media @tablet{
+          padding: 28.6rem 0 2.5rem 1.5rem;
+        }
+  
+        @media @mobile{
+          padding: 0 0 0 0;
+          font-size:1.8rem;
+          
+        
+        }
+    
+      }
+      }
+  
+  
+  .review-section {
+      width: 75%;
+      min-height:40rem;
+      margin: 4.5rem auto;
+      display: flex;
+     // background:linear-gradient(to right, #E9B870, #fcf4e9 );
+      // border: .1rem solid @disney-gold;
+      box-shadow: .1rem .1rem .5rem @disney-dark-gold;
+      border-radius: 3rem;
+      overflow: hidden;
+  
+  .reviews {
+      width: 100%;
+      @media @mobile{
+        flex-direction:column;
+      }
+      .review-items {
+        width: 100%;
+        height: auto;
+        min-height:30rem;
+        display: flex;
+        justify-content: center;
+        padding-top: 4.4rem;
+        border-radius: 2rem;
+      }
+      .review-item {
+        display: none; 
+        width: 75%;
+        @media @mobile{
+          flex-direction:column-reverse;
+        }
+        .review-item-title {
+          min-width:7.5rem;
+          font-size: 2.4rem;
+          font-weight: bold;
+          padding-top: 2rem;
+          margin-left:4rem;
+          color:#41414C;
+  
+          @media @tablet{
+            font-size: 2rem;
+          }
+          @media @mobile{
+            padding-bottom:1rem;
+          }
+        }
+      }
+      .review-item-selected {
+        display: flex;
+        justify-content: space-between;
+        color:#41414C;
+  
+        .review-item-description{
+          padding: 10rem 4rem 0 0;
+          font-family: 'Merienda', cursive;
+          font-size:1.4rem;
+          @media @tablet{
+            line-height: 1.5;
+            font-size: 1.4rem;
+            padding-bottom: 1rem;
+          }
+          @media @mobile {
+            padding-top:0;
+          }
+  
+        }
+      }
+    
+      .reviews-links {
+        display: flex;
+        background-color: @disney-blue;
+      }
+    
+      .reviews-link {
+        padding: 1rem 7.2rem;
+        font-size: 2.4rem;
+        background-color: @disney-blue;
+        border-right: 0.1rem solid white;
+        color: @white;
+        cursor: pointer;
+        &:hover {
+          background-color: @disney-light-blue;
+          color:@disney-gold;
+        }
+        @media @tablet {
+          padding: 10px 46px;
+        }
+      }
+      .reviews-link-selected {
+        z-index: 2;
+        border-right: 0.1rem solid @disney-dark-gold;
+        background-color: @white;
+        color:@disney-gold;
+        &:hover {
+          background-color: @disney-light-blue;
+        } 
+      }
+      .review-image{
+        height:23rem;
+  
+        @media @tablet {
+          height:12rem;
+        }
+      }
+    }
+  }
+  .mobile{
+    display:none;
+  
+    @media @mobile {
+      display:flex;
+    }
+  }
+  .footer {
+    min-height:60rem;
+      height:100%;
+      background: url('../img/castle-day.jpg') center center;
+      background-size:cover;
+    position:relative;
+  
+    h2 {
+          font-size: 4.5rem;
+          color:@disney-gold;
+      padding: 27.3rem 0 5.5rem 81rem;
+  
+      @media @tablet {
+        padding: 7.3rem 0 5.5rem 7rem;
+      }
+  
+      @media @mobile{
+        padding: 3.1rem 0;
+        font-size:3rem;
+      }
+    }
+  
+    .btn {
+      .button-creator(20rem, 4.1rem, @white, @disney-gold, 2.5rem);  
+      font-family: 'WaltographRegular'; 
+      font-weight: lighter; 
+      font-style: normal;  
+      margin-left: 104rem;
+      border-color: #E9B870;
+      box-shadow: .5rem .5rem .5rem @disney-gold;  
+  
+      @media @tablet {
+        margin-left: 18rem;
+      }
+      @media @mobile {
+        margin-left:14rem;
+        width:18rem;
+      }
+    }
+  }

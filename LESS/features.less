@@ -1,0 +1,108 @@
+.features {
+    //background: linear-gradient(to right, #dd9222, #E9B870 );
+	text-align:center;
+
+	.full-width {
+        width:100%;
+	    margin:0 auto;
+	    display:flex;
+        padding: 1rem 0;
+
+        h2{
+            margin:0 0 5.5rem 2.5rem;
+            padding: 4rem 0 0 30rem;
+            color: @disney-dark-gold;
+        }
+        @media @mobile{
+            flex-direction:column;
+            padding: 0 0;
+
+            
+        }
+        
+    .third-width {
+            width:33.3%;
+            height: 35rem;
+            margin: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            align-content:center;
+            border: .1rem solid @disney-gold;
+            box-shadow: .1rem .1rem .5rem @disney-dark-gold;
+            border-radius: 1rem;
+            overflow: hidden;
+
+            
+	img {
+        padding-bottom: 3rem;
+        max-width: 30.5%;
+        height: auto;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        object-fit: cover;
+        position: relative;
+    }
+    
+    .shift {
+       max-width:35%;
+    }
+
+            @media @mobile {
+                width:90%;
+               margin-bottom:2rem;
+               border:none;
+               background:linear-gradient(to right,#fcf4e9, #E9B870 );
+              
+        
+
+               h3{
+                   font-size:2rem;
+               }
+
+               p{
+                   font-size:1.2rem;
+               }
+
+               }
+            }
+
+            .fa-user-plus, .fa-handshake, .fa-grin-alt{
+                margin-top:3rem;
+                color:@disney-dark-gold;
+                font-size:3rem;
+            }
+            .fa-app-store-ios, .fa-google-play{
+                color:@disney-dark-gold;
+                font-size:5rem;
+                margin:1rem 4rem;
+
+                @media @mobile{
+                    color:@disney-blue;
+                }
+            }
+        }
+        
+	h3 {
+		font-size:2.4rem;
+		line-height:3.2rem;
+		width: 33%;
+        margin:0 auto;
+        @media @tablet{
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+	}
+
+	p {
+        font-family:'Merienda', cursive;
+		font-size:1.4rem;
+		line-height:3rem;
+        padding: 0 5rem 1rem;
+        
+        @media @tablet {
+            font-size: 1.2rem;
+            padding: 0 1rem 1rem;
+        }
+    }
+}
