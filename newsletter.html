@@ -7,14 +7,16 @@
 
     <title>Disney Parent | Where Parents Add Magic To Their Trip</title>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu"
+    rel="stylesheet"
+  />
+     
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/waltograph" type="text/css"/>
     <link href="css/index.css" rel="stylesheet" />
     <link rel="stylesheet" href="./CSS/index.css">
-         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/waltograph" type="text/css"/>
+         
         <link href="https://fonts.googleapis.com/css?family=Merienda:400,700" rel="stylesheet">
+        <script src="./components/form.js" async></script>
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -53,64 +55,82 @@
           Also, fill out the additional information box if you have anything you
           want us to know.
         </p>
-        <form>
-          <label for="fname">First Name:</label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your first name..."
-          /><br />
-          <label for="lname">Last Name:</label>
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name..."
-          /><br />
-          <label for="phone">Phone Number:</label>
-          <input
-            type="text"
-            id="phone"
-            name="phonenumber"
-            placeholder="(XXX) XXX-XXXX"
-          /><br />
-          <label for="email">Email:</label>
-          <input
-            type="text"
-            id="email"
-            name="emailaddress"
-            placeholder="youremail@you.com"
-          /><br />
-          <div class="address">
-            <label for="address1 address2 address3">Address:</label>
-            <input
-              type="text"
-              id="address1"
-              name="address1"
-              placeholder="Address line 1..."
-            /><br />
-            <input
-              type="text"
-              id="address2"
-              name="address2"
-              placeholder="Address line 2..."
-            /><br />
-            <input
-              type="text"
-              id="address3"
-              name="address3"
-              placeholder="Address line 3..."
-            /><br />
-          </div>
-          <div class="info">
-            <label for="inputfield">Additional Information:</label>
-            <textarea
-              id="inputfield"
-              name="inputfield"
-              placeholder="Please write your instructions down..."
-            ></textarea>
-            <input type="submit" value="Submit" />
-          </div>
-        </form>
-</section>
+       </section>
+       <section>
+        <div class="form">
+      
+          
+          
+          <div class="tab-content">
+            <div id="signup">   
+              <h4>Sign Up for Free</h4>
+              
+              <form action="/" method="post">
+              
+              <div class="top-row">
+                <div class="field-wrap">
+                  <label>
+                    First Name<span class="req">*</span>
+                  </label>
+                  <input type="text" required autocomplete="off" />
+                </div>
+            
+                <div class="field-wrap">
+                  <label>
+                    Last Name<span class="req">*</span>
+                  </label>
+                  <input type="text"required autocomplete="off"/>
+                </div>
+              </div>
+    
+              <div class="field-wrap">
+                <label>
+                  Email Address<span class="req">*</span>
+                </label>
+                <input type="email"required autocomplete="off"/>
+              </div>
+              
+              <div class="field-wrap">
+                <label>
+                  Set A Password<span class="req">*</span>
+                </label>
+                <input type="password"required autocomplete="off"/>
+              </div>
+              
+              <button type="submit" class="button button-block"/>Get Started</button>
+              
+              </form>
+    
+            </div>
+            
+            <div id="login">   
+              <h1>Welcome Back!</h1>
+              
+              <form action="/" method="post">
+              
+                <div class="field-wrap">
+                <label>
+                  Email Address<span class="req">*</span>
+                </label>
+                <input type="email"required autocomplete="off"/>
+              </div>
+              
+              <div class="field-wrap">
+                <label>
+                  Password<span class="req">*</span>
+                </label>
+                <input type="password"required autocomplete="off"/>
+              </div>
+              
+              <p class="forgot"><a href="#">Forgot Password?</a></p>
+              
+              <button class="button button-block"/>Log In</button>
+              
+              </form>
+    
+            </div>
+            
+          </div><!-- tab-content -->
+          
+    </div> <!-- /form -->
+       </section>
