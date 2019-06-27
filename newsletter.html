@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Disney Parent | Where Parents Add Magic To Their Trip</title>
+    <title>Disney Parent | Smart APP For Smart Parents</title>
 
     <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu"
     rel="stylesheet"
@@ -14,16 +14,16 @@
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/waltograph" type="text/css"/>
     <link href="css/index.css" rel="stylesheet" />
     <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./components/reviews.js" async></script>
          
         <link href="https://fonts.googleapis.com/css?family=Merienda:400,700" rel="stylesheet">
-        <script src="./components/form.js" async></script>
+       
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
   </head>
   <div class="nav-bar">
-    <div class="nav-bar">
       <div class="container">
           <nav class="container-left">
               <ul>
@@ -33,106 +33,61 @@
                   <li><a href="reviews.html">Reviews</a></li>
                   <li><a href="newsletter.html">NewsLetter</a></li>
 
+          </ul>
+      </nav>
+
+
+                  <div class="container-center">
+                      <span>Disney Parent</span>
+                      
               </ul>
           </nav>
-        <div class="container-center">
-            <span>Disney Parent</span>
-        </div>
-        <button onclick="window.location.href = '#';" target="_blank" class="btn">Check Out Our App!</button>
-    </div>
-</div>
-
-  <body>
-   
-    </div>
-
-    
-
-    <section class="subscribe-content">
-        <h2><center>Subscribe to Our Newsletter</center></h2>
-        <p>
-          If you give us your information, we will send all sorts of cool
-         deals straight to your email in our free Disney Parent Newletter Magazine.
-          You'll stay informed on everything space-y going on in the universe.
-          Also, fill out the additional information box if you have anything you
-          want us to know.
-        </p>
-       </section>
-       <section>
-        <div class="form">
+      </div>
+      <button onclick="window.location.href = 'https://disneyparent.netlify.com/';" target="_blank" class="btn">Get The App!</button>
+  </div>
+  </div>
+                <body> 
+                   
+                <center><h2>Weekly Coupons and Travel Tips</h2></center>
+                  
+                <center><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up for our Newsletter</button></center> 
+                  
+                <div id="id01" class="modal"> 
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span> 
+                  <form class="modal-content animate" action="/action_page.php"> 
+                    <div class="container"> 
+                      <label><b>Email</b></label> 
+                      <input type="text" placeholder="Enter Email" name="email" required> 
+                  
+                      <label><b>Password</b></label> 
+                      <input type="password" placeholder="Enter Password" name="psw" required> 
+                  
+                      <label><b>Repeat Password</b></label> 
+                      <input type="password" placeholder="Repeat Password" name="psw-repeat" required> 
+                      <input type="checkbox" checked="checked"> Remember me 
+                      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> 
+                  
+                      <div class="clearfix"> 
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> 
+                        <button type="submit" class="signupbtn">Sign Up</button> 
+                      </div> 
+                    </div> 
+                  </form> 
+                </div> 
+                  
+                <script> 
+                  
+                var modal = document.getElementById('id01'); 
+                  
+                  
+                window.onclick = function(event) { 
+                    if (event.target == modal) { 
+                        modal.style.display = "none"; 
+                    } 
+                } 
+                </script> 
+                  
+                </body> 
+        
+        
       
-          
-          
-          <div class="tab-content">
-            <div id="signup">   
-              <h4>Sign Up for Free</h4>
-              
-              <form action="/" method="post">
-              
-              <div class="top-row">
-                <div class="field-wrap">
-                  <label>
-                    First Name<span class="req">*</span>
-                  </label>
-                  <input type="text" required autocomplete="off" />
-                </div>
-            
-                <div class="field-wrap">
-                  <label>
-                    Last Name<span class="req">*</span>
-                  </label>
-                  <input type="text"required autocomplete="off"/>
-                </div>
-              </div>
-    
-              <div class="field-wrap">
-                <label>
-                  Email Address<span class="req">*</span>
-                </label>
-                <input type="email"required autocomplete="off"/>
-              </div>
-              
-              <div class="field-wrap">
-                <label>
-                  Set A Password<span class="req">*</span>
-                </label>
-                <input type="password"required autocomplete="off"/>
-              </div>
-              
-              <button type="submit" class="button button-block"/>Get Started</button>
-              
-              </form>
-    
-            </div>
-            
-            <div id="login">   
-              <h1>Welcome Back!</h1>
-              
-              <form action="/" method="post">
-              
-                <div class="field-wrap">
-                <label>
-                  Email Address<span class="req">*</span>
-                </label>
-                <input type="email"required autocomplete="off"/>
-              </div>
-              
-              <div class="field-wrap">
-                <label>
-                  Password<span class="req">*</span>
-                </label>
-                <input type="password"required autocomplete="off"/>
-              </div>
-              
-              <p class="forgot"><a href="#">Forgot Password?</a></p>
-              
-              <button class="button button-block"/>Log In</button>
-              
-              </form>
-    
-            </div>
-            
-          </div><!-- tab-content -->
-          
-    </div> <!-- /form -->
-       </section>
