@@ -933,6 +933,8 @@ img {
 .footer {
   min-height: 60rem;
   height: 100%;
+  background: url('../img/castle-day.jpg') center center;
+  background-size: cover;
   position: relative;
 }
 .footer h2 {
@@ -1271,72 +1273,91 @@ img {
     padding: 2rem 0 2rem 13.5rem;
     font-size: 1.2rem;
     background: rgba(0, 0, 0, 0.5);
-}
-}
-
-/* Newsletter Form*/
-.contact .subscribe-content {
-  width: 100%;
-  margin-bottom: 30px;
-}
-.contact .subscribe-content h2 {
-  padding: 15px;
-}
-.contact .subscribe-content p {
-  padding: 0 15px;
-}
-.contact .subscribe-content form {
-  width: 100%;
-  padding: 15px;
-  margin-top: 10px;
-  font-size: 1.6rem;
-  line-height: 1.4;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-}
-.contact .subscribe-content form input {
-  padding: 5px 2% 5px 0.7%;
-}
-.contact .subscribe-content form .address input {
-  margin-bottom: 0;
-}
-.contact .subscribe-content form div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-}
-.contact .subscribe-content form div textarea {
-  margin-bottom: 20px;
-  padding: 0 50% 200px 0.7%;
+  }
 }
 
+input[type=text], input[type=password] { 
+  width: 100%; 
+  padding: 12px 20px; 
+  margin: 8px 0; 
+  display: inline-block; 
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+} 
 
-.contact .subscribe-content form input:last-child {
-  text-align: center;
-  background: #22283a;
-  color: white;
-  border-radius: 5px;
-  padding: 7px 2%;
-  font-size: 1.8rem;
-  border: 1px solid #22283a;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-.contact .subscribe-content form input:last-child:hover {
-  background: #f6f6f6;
-  border: 1px solid #454a59;
-  color: #454a59;
-}
 
-* {box-sizing: border-box}
+button { 
+  background-color: #4CAF50; 
+  color: white; 
+   
+  margin: 8px 0; 
+  border: none; 
+  cursor: pointer; 
+  width: 100%; 
+} 
+
+
+.cancelbtn { 
+  padding: 14px 20px; 
+  background-color: #f44336; 
+} 
+
+
+.cancelbtn,.signupbtn {float:left;width:50%} 
+
+
+.container { 
+  padding: 16px; 
+} 
+
+
+.modal { 
+  display: none;  
+  position: fixed;  
+  z-index: 1; left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%;  
+  overflow: auto;  
+  background-color: rgb(0,0,0);  
+  background-color: rgba(0,0,0,0.4);  
+  padding-top: 60px; 
+} 
+
+
+.modal-content { 
+  background-color: #fefefe; 
+  margin: 5% auto 15% auto;  
+  border: 1px solid #888; 
+  width: 80%;   
+} 
+
+
+.close { 
+  position: absolute; 
+  right: 35px; 
+  top: 15px; 
+  color: #000; 
+  font-size: 40px; 
+  font-weight: bold; 
+} 
+
+.close:hover, 
+.close:focus { 
+  color: red; 
+  cursor: pointer; 
+} 
+
+
+.clearfix::after { 
+  content: ""; 
+  clear: both; 
+  display: table; 
+} 
+
+
+@media screen and (max-width: 300px) { 
+  .cancelbtn, .signupbtn { 
+     width: 100%; 
+  } 
+} 
